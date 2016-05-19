@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="page-header">
+            <h2 style="color:#0099cc">Biomedical image modality</h2>
+        </div>
+        <p>A large data set of labeled biomedical images, includes the image class, if a given categorization was accurate, and a URL to the image judged.</p>
+        <p>Data Rows: 10673</p>
+        <p>Added: January 22, 2015 by CrowdFlower</p>
+    </div>
+
+    <h3 style="color:#0099cc">Configuration</h3>
+
+    <form role="form" action="/data" method="get">
+    <div class="form-group">
+        <div class="col-md-4">
+
+            <label for="index">Start from record: </label>
+            <input type="number" min="0" max="10673" class="form-control" id="index" name="index" placeholder="Enter number" required autofocus>
+            <br>
+            <input type="submit" class="btn btn-success" value="Submit">
+
+        </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

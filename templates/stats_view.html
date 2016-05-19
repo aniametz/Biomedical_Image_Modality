@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics & charts</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div>
+    <h3 style="color:#0099cc">Classification results</h3>
+    <br>
+    <img src = "data:image/png;base64,{{ path3 }}">
+    </div>
+
+
+    <div>
+    <h3 style="color:#0099cc">Statistics</h3>
+
+    <table class="table table-hover">
+    {% for s in stats %}
+    <tr>
+        <th> {{ s }} </th>
+        <td> {{ stats[s] }} </td>
+    </tr>
+    {% endfor %}
+    </table>
+    </div>
+
+    <br><br><br>
+
+    <div>
+    <h3 style="color:#0099cc">Classification results of 5 most frequent categories</h3>
+    <br>
+    <img src = "data:image/png;base64,{{ path1 }}" >
+    </div>
+
+    <br><br><br>
+
+    <div>
+    <h3 style="color:#0099cc">The number of all categories</h3>
+    <table class="table">
+    {% for i in category %}
+    <tr>
+        <th> {{ i[0] }} </th>
+        <td> {{ i[1] }} </td>
+    </tr>
+    {% endfor %}
+    </table>
+    </div>
+
+    <br>
+    <div>
+    <h3 style="color:#0099cc">The number of good classification in all categories</h3>
+    <table class="table">
+    {% for i in classification %}
+    <tr>
+        <th> {{ i[0] }} </th>
+        <td> {{ i[1] }} </td>
+    </tr>
+    {% endfor %}
+    </table>
+    </div>
+
+    <br>
+    <div>
+    <h3 style="color:#0099cc">Classification confidence average of 5 best classified categories</h3>
+    <br>
+    <img src = "data:image/png;base64,{{ path2 }}" >
+    </div>
+    <br><br><br>
+
+</div>
+
+</body>
+</html>
