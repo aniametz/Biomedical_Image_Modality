@@ -1,1 +1,1 @@
-web: gunicorn biomedical-image-modality.wsgi --log-file -
+web: gunicorn projekt_1.wsgi
