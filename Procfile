@@ -1,1 +1,1 @@
-web: gunicorn projekt_1.py:app
+web: gunicorn form:app
